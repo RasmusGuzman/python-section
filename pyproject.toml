@@ -5,6 +5,10 @@ description = ""
 authors = ["Eugene Mozge"]
 readme = "README.md"
 
+packages = [
+    { include = "src" },
+]
+
 [tool.poetry.dependencies]
 python = "^3.12"
 pydantic = "^2.11.5"

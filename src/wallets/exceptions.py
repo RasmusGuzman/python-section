@@ -1,6 +1,11 @@
-class NegativeValueException(Exception):
+class NegativeValueException(ValueError):
+    """Возникает при попытке использовать отрицательную сумму."""
     pass
 
+class NotComparisonException(ValueError):
+    """Возникает при попытке сравнить разные валюты."""
+    pass
 
-class NotComparisonException(Exception):
+class InsufficientFundsException(ValueError):
+    """Возникает при попытке снять больше, чем есть на счету."""
     pass
